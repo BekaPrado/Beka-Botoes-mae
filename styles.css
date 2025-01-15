@@ -2,54 +2,52 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
     background-color: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
 }
 
 h1 {
     color: rgb(248, 23, 147);
-    margin-top: 90px;
-    margin-left: 350px;
-    font-size: 50px;
+    font-size: 5vw;
+    text-align: center;
+    margin-bottom: 5vh;
 }
 
-.botao-beka {
-    padding: 15px 30px;
-    margin-top: 200px;
-    margin-left: 440px;
+.botao-beka, .botao-dois {
+    padding: 2vh 5vw;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 2vw;
     text-align: center;
-    height: 60px;
-    width: 200px;
+    height: auto;
+    width: 30vw;
     background-color: rgb(224, 97, 118);
+    margin: 1vh;
 }
 
-.botao-beka a {
+.botao-beka a, .botao-dois a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 2vw;
 }
 
-.botao-dois {
-    padding: 15px 30px;
-    margin-top: 200px;
-    margin-left: 40px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    text-align: center;
-    height: 60px;
-    width: 200px;
-    background-color: rgb(224, 97, 118);
-}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 6vw;
+    }
 
-.botao-dois a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 30px;
+    .botao-beka, .botao-dois {
+        width: 40vw;
+        font-size: 3vw;
+    }
 }
