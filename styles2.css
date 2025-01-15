@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: pink;
+}
+
+h1 {
+    color: rgb(248, 23, 147);
+    margin-top: 90px;
+    margin-left: 520px;
+    font-size: 50px;
+}
+
+video{
+    margin-top: 60px;
+    margin-left: 420px;
+}
