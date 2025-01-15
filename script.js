@@ -8,10 +8,10 @@ document.addEventListener('mousemove', (e) => {
     const distanceX = Math.abs(mouseX - buttonRect.x - buttonRect.width / 2);
     const distanceY = Math.abs(mouseY - buttonRect.y - buttonRect.height / 2);
 
-    if (distanceX < 150 && distanceY < 150) {
-        const offsetX = (Math.random() - 0.5) * 100;
-        const offsetY = (Math.random() - 0.5) * 100;
+    if (distanceX < 120 && distanceY < 120) {
+        const offsetX = (Math.random() - 0.5) * 600;
+        const offsetY = (Math.random() - 0.5) * 400;
 
-        botaoDois.style.transform = `translate(${offsetX}vw, ${offsetY}vh)`;
+        botaoDois.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
     }
 });
